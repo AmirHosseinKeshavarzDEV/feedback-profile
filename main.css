@@ -58,3 +58,51 @@
     }
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .container{
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .feedback-sec{
+      transition: all 180ms ease-in-out 48ms;
+      &:hover{
+        margin-bottom: 50px;
+      }
+      &:hover > .stars > img{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 300;
+      }
+      width: 150px;
+      height: 150px;
+      border-radius: 55% 45% 100% 0% / 30% 47% 53% 70% ;
+      img{
+        width: 70px;
+      }
+      .fog-moon{
+        width: 30px;
+        left: 90px;
+        top: 20px;
+      }
+      h1{
+        font-size: 20px;
+        margin: 0;
+      }
+      p{
+        font-size: 14px;
+      }
+      .stars{
+        position: relative;
+        img{
+          transition: all 180ms ease-in 48ms;
+         display: none;
+      }
+    }
+  }
+}
+}
