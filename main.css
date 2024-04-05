@@ -29,10 +29,10 @@
   p {
     margin: 0;
     font-weight: bolder;
-    color: #ECEFF1;
+    color: #eceff1;
   }
-  h1{
-    font-family: Poppins,sans-serif;
+  h1 {
+    font-family: Poppins, sans-serif;
     font-weight: 300;
     font-style: italic;
   }
@@ -49,7 +49,7 @@
     border-radius: 88% 12% 100% 0% / 87% 55% 45% 13%;
     margin-top: -20px;
   }
-  .stars {  
+  .stars {
     > img {
       margin-top: 30px;
       width: 28px;
@@ -60,17 +60,17 @@
 }
 
 @media only screen and (max-width: 750px) {
-  .container{
+  .container {
     width: 500px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    .feedback-sec{
+    .feedback-sec {
       transition: all 180ms ease-in-out 48ms;
-      &:hover{
+      &:hover {
         margin-bottom: 50px;
       }
-      &:hover > .stars > img{
+      &:hover > .stars > img {
         display: inline-block;
         position: absolute;
         top: 10px;
@@ -80,29 +80,77 @@
       }
       width: 150px;
       height: 150px;
-      border-radius: 55% 45% 100% 0% / 30% 47% 53% 70% ;
-      img{
+      border-radius: 55% 45% 100% 0% / 30% 47% 53% 70%;
+      img {
         width: 70px;
       }
-      .fog-moon{
+      .fog-moon {
         width: 30px;
         left: 90px;
         top: 20px;
       }
-      h1{
+      h1 {
         font-size: 20px;
         margin: 0;
       }
-      p{
+      p {
         font-size: 14px;
       }
-      .stars{
+      .stars {
         position: relative;
-        img{
+        img {
           transition: all 180ms ease-in 48ms;
-         display: none;
+          display: none;
+        }
       }
     }
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .feedback-sec {
+      transition: all 180ms ease-in-out 48ms;
+      &:hover {
+        margin-bottom: 50px;
+      }
+      &:hover > .stars > img {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 300;
+      }
+      width: 150px;
+      height: 150px;
+      border-radius: 55% 45% 100% 0% / 30% 47% 53% 70%;
+      img {
+        width: 70px;
+      }
+      .fog-moon {
+        width: 30px;
+        left: 90px;
+        top: 20px;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+      p {
+        font-size: 14px;
+      }
+      .stars {
+        position: relative;
+        img {
+          transition: all 180ms ease-in 48ms;
+          display: none;
+        }
+      }
+    }
+  }
 }
